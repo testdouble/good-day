@@ -1,0 +1,16 @@
+{
+  "name": "client",
+  "description": "An HTML/JS/CSS app",
+  "version": "0.0.1",
+  "private": true,
+  "author": "John Doe",
+  "devDependencies": {
+    "lineman": "^0.29.0",
+    "lineman-ember": "0.0.2",
+    "lineman-rails": "0.0.2"
+  },
+  "scripts": {
+    "start": "lineman run",
+    "test": "lineman spec-ci"
+  }
+}
