@@ -1,14 +1,26 @@
 module.exports =
   drawRoutes: (app) ->
-    # app.get '/colors', (req, res) ->
-    #   res.json
-    #     colors: [
-    #         id: 1
-    #         name: 'red'
-    #       ,
-    #         id: 2
-    #         name: 'yellow'
-    #       ,
-    #         id: 3
-    #         name: 'green'
-    #     ]
+    app.get '/timesheets/:timesheet_id', (req, res) ->
+      res.json
+        timesheets: [
+          id: 1
+          year: 2014
+          week: 5
+          entry_ids: [2, 3, 4, 5, 6]
+        ]
+        entries: [
+            id: 2
+            amount: "full"
+          ,
+            id: 3
+            amount: "none"
+          ,
+            id: 4
+            amount: "half"
+          ,
+            id: 5
+            amount: "full"
+          ,
+            id: 6
+            amount: "full"
+        ]
